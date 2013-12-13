@@ -1,0 +1,12 @@
+<div class="control-group">
+  <label for="title" class="control-label">title</label>
+  <div class="controls">
+    <%- contentTag('input', book.title, {type:'text', class:'span6', name:'title'}) %>
+  </div>
+</div>
+<div class="control-group">
+  <label for="authorId" class="control-label">authorId</label>
+  <div class="controls">
+    <%- selectTag(authors, book.authorId, {class:'span6', name:'authorId'}) %>
+  </div>
+</div>
